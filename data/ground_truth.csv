@@ -1,0 +1,8 @@
+case_id,issue_type,affected_entity,expected_behavior,label
+EDGE-001,future_data_leakage,risk_score,Exclude data recorded after the scoring cutoff,future_data_leakage
+EDGE-002,approved_absence,attendance_event,Do not count approved absences as unexcused absences,approved_absence
+EDGE-003,withdrawn_student,enrollment,Exclude withdrawn enrollments from active risk workflows,withdrawn_student
+EDGE-004,intervention_before_trigger,intervention,Flag an intervention dated before its risk trigger,temporal_violation
+EDGE-005,missing_attendance,attendance_event,Mark attendance risk as insufficient data when evidence is inadequate,missing_data
+EDGE-006,duplicate_attendance,attendance_event,Detect duplicate attendance records for the same enrollment and date,duplicate_record
+EDGE-007,invalid_student_reference,enrollment,Reject an enrollment referencing a nonexistent student,invalid_foreign_key
